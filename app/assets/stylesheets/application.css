@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+
+ $font-stack: 'PT Sans', sans-serif;
+ $primary-color: palegreen;
+ $bg-color: black;
+
+* {
+  background-color: $bg-color;
+  color: $primary-color;
+  font-family: 100% $font-stack;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 3em;
+}
