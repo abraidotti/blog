@@ -1,12 +1,16 @@
 @import 'reset.scss';
-@import 'nav';
+@import url('https://fonts.googleapis.com/css?family=Lobster|PT+Sans');
+
+body {
+  font-family: sans-serif;
+  font-family: "PT Sans", sans-serif;
+}
 
 * {
   box-sizing: border-box;
   margin: 0;
   background-color: saddlebrown;
   color: skyblue;
-  font-family: "PT Sans", sans-serif;
 }
 
 h1 {
@@ -18,3 +22,16 @@ input {
     background-color: white;
     color: black;
 }
+
+textarea {
+    width: 30%;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+@import 'nav';
