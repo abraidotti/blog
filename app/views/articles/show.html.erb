@@ -1,4 +1,3 @@
-
 <p>
   <strong>Title:</strong>
   <%= @article.title %>
@@ -23,7 +22,7 @@
 <% end %>
 
 <h2>Add a comment:</h2>
-<%= form_with(model: [ @article, @article.comments.build ], local: true) do |form| %>
+<%= form_with(model: [ @article, @article.comments.build ]) do |form| %>
   <p>
     <%= form.label :commenter %><br>
     <%= form.text_field :commenter %>
