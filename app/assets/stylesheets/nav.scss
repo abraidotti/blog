@@ -4,17 +4,27 @@ nav {
   height: 10vh;
   margin: 20px 40px;
   padding: 12px;
-  li {
+  .right {
     float: right;
     margin-right: 60px;
     display: inline-block;
   }
-  a {
-    text-align: center;
-    font-family: 'Lobster', cursive;
-    color: skyblue;
-    &:hover {
-      color: white;
+  .session-links {
+    font-family: "PT Sans", sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
+  }
+  .left {
+    float: left;
+    display: inline-block;
+    a {
+      text-align: center;
+      text-decoration: none;
+      font-family: 'Lobster', cursive;
+      color: skyblue;
+      &:hover {
+        color: white;
+      }
     }
   }
 }
