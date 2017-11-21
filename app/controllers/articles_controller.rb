@@ -1,6 +1,8 @@
 class ArticlesController < ApplicationController
+  before_action :set_user
+
   def index
-    @articles = Article.all  
+    @articles = Article.all
   end
 
   def show
@@ -46,6 +48,12 @@ class ArticlesController < ApplicationController
 
   def article_params
     params.require(:article).permit(:title, :text)
+  end
+
+  def set_user
+    unless current_user.nil?
+      @current_user ||= User.find_by(id: session[:user_id])
+    end
   end
 
 end
