@@ -3,9 +3,9 @@
 
   <% @articles.reverse.each do |article| %>
 
-      <div id="article-text">
+      <div id="article-box">
         <p id="article-title"><%= article.title %></p>
-        <p>Text: <%= article.text %></p>
+        <p id="article-text"><%= article.text %></p>
         <p><%= link_to 'Commentary', article_path(article) %></p>
         <% if current_user.id == article.user_id %>
         <p><%= link_to 'Edit', edit_article_path(article) %></p>
