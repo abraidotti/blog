@@ -1,11 +1,9 @@
-<p>
-  <strong>Comment:</strong>
-  <p><%= comment.user.name %> says:</p>
-  <%= comment.body %>
-</p>
+<p><%= comment.user.name %> says:</p>
+<p><%= comment.body %></p>
 
-<p>
-  <%= link_to 'Destroy Comment', [comment.article, comment],
+<p> <% if current_user.id == comment.user.id  %>
+    <%= link_to 'Destroy Comment', [comment.article, comment],
                method: :delete,
                data: { confirm: 'Are you sure?' } %>
+    <% end %>
 </p>

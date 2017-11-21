@@ -15,6 +15,9 @@ class ArticlesController < ApplicationController
 
   def edit
     @article = Article.find(params[:id])
+    if current_user.id != @article.user_id
+      redirect_to articles_path, notice: "You can't just go and edit another user's post."
+    end
   end
 
   def create
@@ -51,9 +54,7 @@ class ArticlesController < ApplicationController
   end
 
   def set_user
-    unless current_user.nil?
-      @current_user ||= User.find_by(id: session[:user_id])
-    end
+    @current_user ||= User.find_by_id(session[:user_id])
   end
 
 end

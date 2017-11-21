@@ -1,13 +1,13 @@
 <h1>articles</h1>
 <%= link_to 'New article', new_article_path %>
 
-  <% @articles.each do |article| %>
+  <% @articles.reverse.each do |article| %>
 
       <div id="article-text">
-        <p>Title: <%= article.title %></p>
+        <p id="article-title"><%= article.title %></p>
         <p>Text: <%= article.text %></p>
         <p><%= link_to 'Commentary', article_path(article) %></p>
-        <% if article.user_id == current_user.id %>
+        <% if current_user.id == article.user_id %>
         <p><%= link_to 'Edit', edit_article_path(article) %></p>
         <p><%= link_to 'Destroy', article_path(article),
                 method: :delete,
