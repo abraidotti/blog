@@ -1,5 +1,5 @@
-<p><%= comment.user.name %> says:</p>
-<p><%= comment.body %></p>
+<p id="comment-name"><%= comment.user.name %>:</p>
+<p id="comment-body"><%= comment.body %></p>
 
 <p> <% if current_user.id == comment.user.id  %>
     <%= link_to 'Destroy Comment', [comment.article, comment],
