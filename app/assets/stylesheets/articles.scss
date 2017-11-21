@@ -2,9 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
-
-
 input {
     background-color: white;
     color: black;
@@ -19,4 +16,10 @@ textarea {
     border-radius: 4px;
     background-color: #f8f8f8;
     resize: none;
+}
+
+#article-text {
+  width: 30vw;
+  background-color: rgba(0,0,0,0.1);
+  margin: 20px auto;
 }
