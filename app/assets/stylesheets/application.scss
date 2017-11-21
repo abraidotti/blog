@@ -1,16 +1,15 @@
 @import 'reset.scss';
 @import url('https://fonts.googleapis.com/css?family=Lobster|PT+Sans');
 
-body {
-  font-family: sans-serif;
-  font-family: "PT Sans", sans-serif;
+* {
+  color: skyblue;
 }
 
-* {
+body {
+  font-family: "PT Sans", sans-serif;
+  font-family: sans-serif;
   box-sizing: border-box;
-  margin: 0;
   background-color: saddlebrown;
-  color: skyblue;
 }
 
 h1 {
@@ -18,20 +17,13 @@ h1 {
   font-size: 3em;
 }
 
-input {
-    background-color: white;
-    color: black;
-}
-
-textarea {
-    width: 30%;
-    height: 100px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f8f8f8;
-    resize: none;
+#session-links {
+  text-align: center;
+  margin: 0 auto;
+  width: 80vw;
 }
 
 @import 'nav';
+@import 'welcome';
+@import 'articles';
+@import 'comments';

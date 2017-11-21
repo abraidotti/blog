@@ -1,21 +1,20 @@
 nav {
   background-color: saddlebrown;
-  width: 100%;
-  ul {
-    list-style-type: none;
-    margin: 15px;
-    padding: 12px;
-    overflow: hidden;
-  }
+  width: 100vw;
+  height: 10vh;
+  margin: 20px 40px;
+  padding: 12px;
   li {
     float: right;
+    margin-right: 60px;
+    display: inline-block;
   }
   a {
-    display: inline-block;
-    color: saddlebrown;
     text-align: center;
+    font-family: 'Lobster', cursive;
+    color: skyblue;
     &:hover {
-      background-color: skyblue;
+      color: white;
     }
   }
 }
