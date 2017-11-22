@@ -18,12 +18,14 @@ textarea {
     resize: none;
 }
 
-#article-box {
+#articles-box {
   border: 2px solid rgba(0,0,0,0.1);
   border-radius: 5px;
   width: 30vw;
+  height: auto;
   background-color: rgba(0,0,0,0.1);
   margin: 20px auto;
+  margin-top: 100px;
 }
 
 #article-title {
@@ -42,4 +44,21 @@ p {
 a:hover {
   color: white;
   text-decoration: none;
+}
+
+.footer {
+  position: fixed;
+  height: 20px;
+  width: 100vw;
+  background-color: white;
+  text-align: right;
+  padding-bottom: 20px;
+  bottom: 0;
+}
+
+.footer div p {
+
+  height: 20px;
+  line-height: 20px;
+  padding-right: 30px;
 }
