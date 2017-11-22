@@ -3,6 +3,7 @@
   <div id="articles-box">
   <% @articles.reverse.each do |article| %>
     <p id="article-title"><%= article.title %></p>
+    <p>by <%= article.user.name %></p>
     <p id="article-text"><%= article.text %></p>
     <p><%= link_to 'Commentary', article_path(article) %></p>
     <% if current_user.id == article.user_id %>
