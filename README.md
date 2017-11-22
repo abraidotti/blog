@@ -25,6 +25,8 @@ and then
 rails server
 ```
 
+Once the server's running, go to localhost:3000 in your browser.
+
 ## Notes
 
-Authentication by email is disabled, so things are pretty insecure at the moment.
+User authentication by email is disabled, so things are pretty insecure at the moment.
