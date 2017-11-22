@@ -24,6 +24,23 @@ h1 {
   text-align: center;
 }
 
+#footer {
+  position: relative;
+  width: 100vw;
+  height: 20px;
+  background-color: white;
+  margin: 5px;
+}
+
+#footer-text {
+  font-family: 'Lobster', cursive;
+  text-align: right;
+  padding-right: 30px;
+  margin: auto;
+}
+
+
+
 @import 'nav';
 @import 'welcome';
 @import 'articles';

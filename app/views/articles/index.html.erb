@@ -1,5 +1,3 @@
-
-
 <h1>articles</h1>
 <%= link_to 'New article', new_article_path %>
   <div id="articles-box">
@@ -8,11 +6,13 @@
     <p id="article-text"><%= article.text %></p>
     <p><%= link_to 'Commentary', article_path(article) %></p>
     <% if current_user.id == article.user_id %>
-    <p><%= link_to 'Edit', edit_article_path(article) %></p>
-    <p><%= link_to 'Destroy', article_path(article),
+    <p><%= link_to 'Edit', edit_article_path(article) %> |
+    <%= link_to 'Destroy', article_path(article),
             method: :delete,
-            data: { confirm: 'Are you sure?' } %></p>
+            data: { confirm: 'Are you sure?' } %>
     <% end %>
+    </p>
+    <br>
   <% end %>
 
 </div>
