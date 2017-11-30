@@ -8,13 +8,8 @@ end
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
-# Use sqlite3 as the database for Active Record
-<<<<<<< HEAD
-gem 'pg'
 
-=======
-# gem 'sqlite3'
->>>>>>> cca3af1c78a0b350eaf05c17349dff9f84a060b2
+gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -46,7 +41,6 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem 'pry'
   gem 'faker'
-  gem 'sqlite3'
 end
 
 group :development do
