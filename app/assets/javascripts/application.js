@@ -15,3 +15,9 @@
 //= require_tree .
 
 console.log("Hello, world!");
+
+const newFunction = function(){
+  console.log("Hello, world.");
+}
+
+newFunction();
